@@ -1,0 +1,20 @@
+{
+  "name": "dating",
+  "version": "1.0.0",
+  "description": "Dating Service Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Radobenko U.",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.2.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss": "^1.4.0"
+  }
+}

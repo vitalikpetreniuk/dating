@@ -1,0 +1,116 @@
+@media (max-width: 991px) {
+	#edit {
+		#blurSlider {
+			margin-bottom: 200px;
+		}
+		.buttons {
+			&.top {
+				margin-bottom: 50px;
+			}
+			
+			button {
+				    width: 100%;
+	    			margin: 0;
+	    			margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	#edit {
+	}
+}
+
+@media (max-width: 600px) {
+	.modal-header {
+		padding: 30px;
+	}
+	.modal-body {
+		padding: 0 30px;
+		padding-bottom: 25px;
+		&.red {
+			padding: 35px 20px;
+		}
+	}
+	.modal-title {
+		font-size: 20px;
+	}
+
+	#loginModal {
+		font-size: 12px;
+	}
+	.btn-lg, .btn-group-lg>.btn {
+		font-size: 16px;
+	}
+	#createAcc {
+		.form-inline .form-control {
+	    	display: inline-block;
+		}
+	}
+	#upload {
+		.info {
+			width: 100%;
+			float: left;
+			.buttons {
+				width: 100%;
+				position: static;
+			}
+		}
+		.three-ways {
+			width: 100%;
+			.way {
+				margin-bottom: 20px;
+				.desc {
+					width: 100%;
+					position: static;
+					.text {
+						position: static;
+						transform: translate(0);
+					}
+					margin-bottom: 20px;
+				}
+				.photos {
+					width: 100%;
+					margin-left: 0;
+					img {
+						margin-bottom: 20px;
+						width: calc(50% - 10px);
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+	#edit {
+		.photo {
+			float: none;
+			width: 100%;
+			text-align: center;
+			padding: 0;
+			margin-bottom: 20px;
+		}
+		#blurSlider {
+			width: 100%;
+			float: none;
+			margin-bottom: 50px;
+		}
+
+		.buttons {
+			float: none;
+			width: 100%;
+			&.top {
+				margin-bottom: 50px;
+			}
+			&.bottom {
+				position: static;
+				width: 100%;
+			}
+			button {
+				    width: 100%;
+	    			margin: 0;
+	    			margin-bottom: 10px;
+			}
+		}
+	}
+}

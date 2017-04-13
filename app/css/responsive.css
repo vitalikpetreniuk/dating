@@ -1,0 +1,72 @@
+@media (max-width: 991px) {
+  #edit #blurSlider {
+    margin-bottom: 200px; }
+  #edit .buttons.top {
+    margin-bottom: 50px; }
+  #edit .buttons button {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px; } }
+
+@media (max-width: 600px) {
+  .modal-header {
+    padding: 30px; }
+  .modal-body {
+    padding: 0 30px;
+    padding-bottom: 25px; }
+    .modal-body.red {
+      padding: 35px 20px; }
+  .modal-title {
+    font-size: 20px; }
+  #loginModal {
+    font-size: 12px; }
+  .btn-lg, .btn-group-lg > .btn {
+    font-size: 16px; }
+  #createAcc .form-inline .form-control {
+    display: inline-block; }
+  #upload .info {
+    width: 100%;
+    float: left; }
+    #upload .info .buttons {
+      width: 100%;
+      position: static; }
+  #upload .three-ways {
+    width: 100%; }
+    #upload .three-ways .way {
+      margin-bottom: 20px; }
+      #upload .three-ways .way .desc {
+        width: 100%;
+        position: static;
+        margin-bottom: 20px; }
+        #upload .three-ways .way .desc .text {
+          position: static;
+          transform: translate(0); }
+      #upload .three-ways .way .photos {
+        width: 100%;
+        margin-left: 0; }
+        #upload .three-ways .way .photos img {
+          margin-bottom: 20px;
+          width: calc(50% - 10px);
+          margin-right: 10px; }
+  #edit .photo {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px; }
+  #edit #blurSlider {
+    width: 100%;
+    float: none;
+    margin-bottom: 50px; }
+  #edit .buttons {
+    float: none;
+    width: 100%; }
+    #edit .buttons.top {
+      margin-bottom: 50px; }
+    #edit .buttons.bottom {
+      position: static;
+      width: 100%; }
+    #edit .buttons button {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 10px; } }
