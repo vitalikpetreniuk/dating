@@ -19,8 +19,426 @@
   font-weight: 300;
   font-style: italic; }
 
-*:focus {
-  outline: 0 !important; }
+header {
+  padding-top: 35px; }
+  header.inner {
+    background: #ff6a6a;
+    padding-bottom: 45px; }
+  header .logo {
+    display: inline-block; }
+    header .logo .logo-text {
+      color: #ffffff;
+      text-decoration: none;
+      margin-top: 25px;
+      font-size: 18px; }
+    header .logo:hover, header .logo:active, header .logo:focus {
+      text-decoration: none; }
+  header .btn {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+    line-height: 1;
+    padding: 10px 30px; }
+    header .btn .caret {
+      display: inline-block;
+      margin-left: 5px; }
+  header .dropdown {
+    display: inline-block;
+    margin-bottom: 20px;
+    vertical-align: top; }
+    header .dropdown.usa {
+      margin-bottom: 20px;
+      margin-left: 40px; }
+  header .btn-primary:hover, header .btn-primary:focus {
+    background-color: #00ceea;
+    border-color: #00ceea; }
+  header .btn-primary:active:hover, header .btn-primary.active:hover, header .open > .dropdown-toggle.btn-primary:hover, header .btn-primary:active:focus, header .btn-primary.active:focus, header .open > .dropdown-toggle.btn-primary:focus, header .btn-primary:active.focus, header .btn-primary.active.focus, header .open > .dropdown-toggle.btn-primary.focus {
+    color: #fff;
+    background-color: #00ceea;
+    border-color: #00ceea; }
+
+:not(.main-page) header .sm-button {
+  border: 1px solid #fff; }
+
+.sm-button {
+  border: 1px solid #999c95;
+  border-radius: 5px;
+  padding: 10px 30px;
+  display: inline-block;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  vertical-align: top;
+  margin-left: 30px;
+  position: relative;
+  transition: .25s; }
+  .sm-button .login-btn {
+    margin-bottom: 0; }
+  .sm-button:hover ul {
+    display: block; }
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100%);
+  padding-top: 5px;
+  left: 0;
+  border-radius: 5px;
+  text-align: left;
+  width: 210px;
+  z-index: 10;
+  display: none; }
+  .dropdown-menu::after {
+    content: " ";
+    position: absolute;
+    bottom: calc(100% - 5px);
+    left: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #999c95 transparent; }
+  .dropdown-menu li:first-child a {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  .dropdown-menu li:last-child a {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  .dropdown-menu li a {
+    color: #ffffff;
+    padding: 10px;
+    display: block;
+    background: #999c95; }
+    .dropdown-menu li a:hover {
+      color: #999c95;
+      background: #ffffff;
+      text-decoration: none; }
+
+:not(.main-page) .dropdown-menu::after {
+  border-color: transparent transparent #fff transparent; }
+
+:not(.main-page) .dropdown-menu li a {
+  background: #ffffff;
+  color: #ff6a6a; }
+  :not(.main-page) .dropdown-menu li a:hover {
+    color: #fff;
+    background: #ff6a6a; }
+
+.sm-button:hover, .sm-button:active, .sm-button:focus {
+  text-decoration: none;
+  background: #999c95;
+  color: #ffffff;
+  cursor: pointer; }
+
+:not(.main-page) .sm-button:hover, .sm-button:active, .sm-button:focus {
+  background-color: transparent; }
+
+.usa-btn:hover, .usa-btn:active, .usa-btn:focus {
+  background-color: #999c95; }
+
+.lang-btn {
+  padding-right: 40px;
+  background: url("../img/down-arrow.png") no-repeat right 20px center; }
+
+.lang-btn:hover, .lang-btn:active, .lang-btn:focus {
+  background: url("../img/down-arrow.png") no-repeat right 20px center;
+  background-color: #999c95; }
+
+:not(.main-page) footer {
+  margin-top: 45px; }
+
+.nav-panel {
+  float: right;
+  text-align: right; }
+
+footer {
+  background: #ff6a6a;
+  padding-top: 50px;
+  padding-bottom: 55px; }
+  footer .container {
+    padding: 0 30px; }
+  footer .bottom-menu {
+    margin-bottom: 45px; }
+    footer .bottom-menu li {
+      display: inline-block;
+      margin: 0 25px; }
+      footer .bottom-menu li:first-child {
+        margin-left: 0; }
+      footer .bottom-menu li:last-child {
+        margin-right: 0; }
+      footer .bottom-menu li a {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 300; }
+  footer .copyright {
+    text-align: right;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    padding-right: 12px; }
+
+:not(.main-page) footer {
+  margin-top: 45px; }
+
+.membership-block {
+  padding-top: 45px; }
+  .membership-block .container {
+    padding: 0 15px; }
+
+.page-main-title {
+  margin: 0;
+  font-size: 36px;
+  color: #ff6a6a;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px; }
+
+.step {
+  font-size: 24px;
+  color: #000000;
+  letter-spacing: 1px;
+  margin-bottom: 30px; }
+
+.plans {
+  margin-bottom: 60px; }
+  .plans .plan {
+    border: 10px solid #f8dcdc;
+    border-radius: 5px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    text-align: center;
+    position: relative; }
+    .plans .plan.most-popular::after {
+      content: 'MOST POPULAR!';
+      font-size: 12px;
+      color: #ff6a6a;
+      background: #f9dcdc;
+      position: absolute;
+      width: 90px;
+      top: 0;
+      right: 0;
+      padding: 7px 0;
+      border-bottom-left-radius: 5px;
+      text-align: left;
+      padding-left: 20px; }
+    .plans .plan.per-month .price::after {
+      content: 'PER MONTH';
+      font-size: 12px;
+      color: #929393;
+      position: absolute;
+      width: 50px;
+      bottom: 15px;
+      left: calc(100% + 8px);
+      text-align: left;
+      line-height: 15px; }
+    .plans .plan.selected {
+      border: 10px solid #7be3f1; }
+      .plans .plan.selected .select-plan {
+        background: #00ceea;
+        color: #ffffff; }
+      .plans .plan.selected.most-popular::after {
+        background: #7be3f1;
+        color: #ffffff; }
+    .plans .plan .term {
+      font-size: 19px;
+      font-weight: bold;
+      color: #303030;
+      text-transform: uppercase;
+      margin-bottom: 5px; }
+    .plans .plan .price {
+      font-size: 140px;
+      font-weight: 300;
+      color: #303030;
+      line-height: 1;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 30px; }
+      .plans .plan .price::before {
+        content: '$';
+        font-size: 40px;
+        color: #cccdcd;
+        top: 20px;
+        right: 100%;
+        position: absolute; }
+    .plans .plan .features {
+      padding-left: 100px;
+      margin-bottom: 45px; }
+      .plans .plan .features li {
+        text-align: left;
+        margin-bottom: 5px; }
+        .plans .plan .features li span {
+          font-size: 18px;
+          color: #303030;
+          position: relative;
+          text-align: left; }
+          .plans .plan .features li span::before {
+            content: '';
+            background: #303030;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            top: 8px;
+            right: calc(100% + 10px);
+            position: absolute; }
+    .plans .plan .select-plan {
+      padding: 20px 60px;
+      background: #ff6a6a;
+      bottom: 35px;
+      left: 50%; }
+      .plans .plan .select-plan:hover {
+        background: #00ceea;
+        color: #ffffff; }
+  .plans *[class*="col-"] {
+    padding: 0 15px; }
+
+.after-text {
+  font-size: 18px;
+  text-align: center;
+  color: #000000; }
+  .after-text a {
+    color: #000000;
+    text-decoration: underline; }
+
+.benefits {
+  margin-bottom: 40px;
+  overflow: hidden; }
+  .benefits .title {
+    font-size: 24px;
+    color: #303030;
+    margin-bottom: 45px; }
+  .benefits .item {
+    width: calc(50% - 70px);
+    float: left;
+    margin-bottom: 40px; }
+    .benefits .item:nth-child(odd) {
+      margin-right: 70px;
+      margin-left: 0; }
+    .benefits .item:nth-child(even) {
+      margin-left: 70px; }
+    .benefits .item .name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 15px; }
+    .benefits .item .text {
+      font-size: 18px;
+      line-height: 30px; }
+
+.step-desc {
+  color: #ff6a6a;
+  line-height: 30px;
+  font-size: 14px;
+  margin-top: -25px;
+  margin-bottom: 50px; }
+
+.pay-items {
+  margin-bottom: 45px;
+  overflow: hidden; }
+
+.pay-item {
+  float: left;
+  width: 20%; }
+  .pay-item:hover {
+    cursor: pointer; }
+    .pay-item:hover .name {
+      color: #00ceea;
+      transition: .25s; }
+  .pay-item .image {
+    margin-bottom: 10px;
+    text-align: center; }
+    .pay-item .image img {
+      max-width: 100%; }
+  .pay-item .name {
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1;
+    transition: .25s; }
+
+.btn {
+  color: #fff; }
+
+@media (max-width: 1199px) {
+  .pay-item .image {
+    padding: 0 10px; }
+  .plans .plan .features {
+    padding-left: 70px; }
+  footer .bottom-menu li {
+    margin: 0 12px; } }
+
+@media (max-width: 991px) {
+  header .logo .logo-text {
+    font-size: 16px; }
+  .plans .plan {
+    margin-bottom: 20px; }
+  .benefits .item {
+    width: calc(50% - 20px); }
+  .benefits .item:nth-child(even) {
+    margin-left: 20px; }
+  .benefits .item:nth-child(odd) {
+    margin-right: 20px; }
+  .plans .plan .features li span br {
+    display: none; }
+  footer .bottom-menu {
+    margin-bottom: 30px;
+    overflow: hidden; }
+  footer .bottom-menu li {
+    float: left;
+    width: 33.3%;
+    margin: 0;
+    margin-bottom: 15px; } }
+
+@media (max-width: 767px) {
+  header .logo {
+    margin-bottom: 30px; }
+  .pay-item {
+    width: 33.3%;
+    margin-bottom: 20px; }
+  .nav-panel {
+    float: none;
+    text-align: left; } }
+
+@media (max-width: 600px) {
+  .plans .plan .price {
+    font-size: 100px; }
+  .plans .plan .features li span {
+    font-size: 16px; }
+  .plans .plan .features {
+    padding-left: 40px; }
+  .plans .plan.most-popular::after {
+    font-size: 10px;
+    width: 79px; }
+  .plans .plan .select-plan {
+    padding: 10px 40px; }
+  .benefits .item {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 20px; }
+  .benefits .item:nth-child(odd) {
+    margin-right: 0;
+    margin-left: 0; }
+  .benefits .item:nth-child(even) {
+    margin-left: 0;
+    margin-right: 0; }
+  .pay-item {
+    width: 50%; }
+  .pay-item .name {
+    font-size: 20px; }
+  .pay-items {
+    margin-bottom: 15px; }
+  .step-desc {
+    line-height: 20px;
+    font-size: 13px; }
+  footer .bottom-menu li {
+    float: left;
+    width: 50%;
+    margin: 0;
+    margin-bottom: 15px; }
+    footer .bottom-menu li a {
+      font-size: 12px; }
+  .benefits .item .text {
+    font-size: 16px;
+    line-height: 30px; } }
 
 .btn {
   background: #00ceea;
@@ -217,3 +635,10 @@
   position: absolute;
   right: 20px;
   top: 10px; }
+
+*:focus {
+  outline: 0 !important; }
+
+ul {
+  margin: 0;
+  padding: 0; }

@@ -1,0 +1,356 @@
+.membership-block {
+    padding-top: 45px;
+    .container {
+        padding: 0 15px;
+    }
+}
+
+.page-main-title {
+    margin: 0;
+    font-size: 36px;
+    color: #ff6a6a;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.step {
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.plans {
+    margin-bottom: 60px;
+    .plan {
+        border: 10px solid #f8dcdc;
+        border-radius: 5px;
+        padding-top: 30px;
+        padding-bottom: 35px;
+        text-align: center;
+        position: relative;
+        &.most-popular::after {
+            content: 'MOST POPULAR!';
+            font-size: 12px;
+            color: #ff6a6a;
+            background: #f9dcdc;
+            position: absolute;
+            width: 90px;
+            top: 0;
+            right: 0;
+            padding: 7px 0;
+            border-bottom-left-radius: 5px;
+            text-align: left;
+            padding-left: 20px;
+        }
+        &.per-month .price::after {
+            content: 'PER MONTH';
+            font-size: 12px;
+            color: #929393;
+            position: absolute;
+            width: 50px;
+            bottom: 15px;
+            left: calc(100% + 8px);
+            text-align: left;
+            line-height: 15px;
+        }
+        &.selected {
+            border: 10px solid #7be3f1;
+            .select-plan {
+                background: #00ceea;
+                color: #ffffff;
+            }
+            &.most-popular::after {
+			    background: #7be3f1;
+			    color: #ffffff;
+			}
+        }
+        .term {
+		    font-size: 19px;
+		    font-weight: bold;
+		    color: #303030;
+		    text-transform: uppercase;
+		    margin-bottom: 5px;
+		}
+		.price {
+		    font-size: 140px;
+		    font-weight: 300;
+		    color: #303030;
+		    line-height: 1;
+		    position: relative;
+		    display: inline-block;
+		    margin-bottom: 30px;
+		    &::before {
+			    content: '$';
+			    font-size: 40px;
+			    color: #cccdcd;
+			    top: 20px;
+			    right: 100%;
+			    position: absolute;
+			}
+		}
+		.features {
+		    padding-left: 100px;
+		    margin-bottom: 45px;
+		    li {
+			    text-align: left;
+			    margin-bottom: 5px;
+			    span{
+				    font-size: 18px;
+				    color: #303030;
+				    position: relative;
+				    text-align: left;
+				    &::before {
+					    content: '';
+					    background: #303030;
+					    border-radius: 50%;
+					    width: 8px;
+					    height: 8px;
+					    top: 8px;
+					    right: calc(100% + 10px);
+					    position: absolute;
+					}
+				}
+			}
+		}
+		.select-plan {
+		    padding: 20px 60px;
+		    background: #ff6a6a;
+		    bottom: 35px;
+		    left: 50%;
+		    &:hover {
+			    background: #00ceea;
+			    color: #ffffff;
+			}
+		}
+    }
+    *[class*="col-"] {
+        padding: 0 15px;
+    }
+}
+
+.after-text {
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    a {
+	    color: #000000;
+	    text-decoration: underline;
+	}
+}
+
+.benefits {
+    margin-bottom: 40px;
+    overflow: hidden;
+    .title {
+	    font-size: 24px;
+	    color: #303030;
+	    margin-bottom: 45px;
+	}
+	.item {
+	    width: calc(50% - 70px);
+	    float: left;
+	    margin-bottom: 40px;
+	    &:nth-child(odd) {
+		    margin-right: 70px;
+		    margin-left: 0;
+		}
+		&:nth-child(even) {
+		    margin-left: 70px;
+		}
+		.name {
+		    font-size: 18px;
+		    font-weight: bold;
+		    color: #000000;
+		    margin-bottom: 15px;
+		}
+		.text {
+		    font-size: 18px;
+		    line-height: 30px;
+		}
+	}
+}
+
+.step-desc {
+    color: #ff6a6a;
+    line-height: 30px;
+    font-size: 14px;
+    margin-top: -25px;
+    margin-bottom: 50px;
+}
+
+.pay-items {
+    margin-bottom: 45px;
+    overflow: hidden;
+}
+
+.pay-item {
+    float: left;
+    width: 20%;
+    &:hover {
+	    cursor: pointer;
+	    .name {
+		    color: #00ceea;
+		    transition: .25s;
+		}
+	}
+	.image {
+	    margin-bottom: 10px;
+	    text-align: center;
+	    img {
+	    	max-width: 100%;
+	    }
+	}
+	.name {
+	    color: #000000;
+	    font-size: 24px;
+	    text-align: center;
+	    line-height: 1;
+	    transition: .25s;
+	}
+}
+
+.btn {
+	color: #fff;
+}
+
+@media (max-width: 1199px) {
+	.pay-item .image {
+		padding: 0 10px;
+	}
+	.plans .plan .features {
+		padding-left: 70px;
+	}
+
+	footer .bottom-menu li {
+	    margin: 0 12px;
+	}
+}
+
+
+
+@media (max-width: 991px) {
+	header .logo .logo-text {
+		font-size: 16px;
+	}
+
+	.plans .plan {
+		margin-bottom: 20px;
+	}
+
+	.benefits .item {
+		width: calc(50% - 20px);
+	}
+
+	.benefits .item:nth-child(even) {
+		margin-left: 20px;
+	}
+
+	.benefits .item:nth-child(odd) {
+		margin-right: 20px;
+	}
+
+	.plans .plan .features li span {
+		br {
+			display: none;
+		}
+	}
+
+	footer .bottom-menu {
+		margin-bottom: 30px;
+		overflow: hidden;
+	}
+
+	footer .bottom-menu li {
+	    float: left;
+	    width: 33.3%;
+	    margin: 0;
+	    margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 767px) {
+	header .logo {
+		margin-bottom: 30px;
+	}
+
+	.pay-item {
+		width: 33.3%;
+		margin-bottom: 20px;
+	}
+
+	.nav-panel {
+		float: none;
+		text-align: left;
+		.dropdown {}
+	}
+}
+
+@media (max-width: 600px) {
+	.plans .plan .price {
+		font-size: 100px;
+	}
+	.plans .plan .features li span {
+		font-size: 16px;
+	}
+	.plans .plan .features {
+		padding-left: 40px;
+	}
+	.plans .plan.most-popular::after {
+	    font-size: 10px;
+	    width: 79px;
+	}
+	.plans .plan .select-plan {
+	    padding: 10px 40px;
+	}
+
+	.benefits .item {
+		margin: 0;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.benefits .item:nth-child(odd) {
+	    margin-right: 0;
+	     margin-left: 0;
+	}
+
+	.benefits .item:nth-child(even) {
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+
+	.pay-item {
+		width: 50%;
+	}
+
+	.pay-item .name {
+		font-size: 20px;
+	}
+
+	.pay-items {
+	    margin-bottom: 15px;
+	}
+
+	.step-desc {
+	    line-height: 20px;
+	    font-size: 13px;
+	}
+
+	footer .bottom-menu li {
+	    float: left;
+	    width: 50%;
+	    margin: 0;
+	    margin-bottom: 15px;
+	    a {
+	    	font-size: 12px;
+	    }
+	}
+
+	.benefits .item .text {
+	    font-size: 16px;
+	    line-height: 30px;
+	}
+}

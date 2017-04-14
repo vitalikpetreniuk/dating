@@ -20,4 +20,28 @@ $(function(){
 		$('#edit .buttons.on-active').hide();
 		$('#blurSlider').hide();
 	});
+
+	 var planHeights = [];
+
+    $('.select-plan').on('click',function(){
+        $('.select-plan').text('select');
+        $('.plan').removeClass('selected');
+       $(this).closest('.plan').toggleClass('selected');
+       if($(this).text()=='selected') {
+           $(this).text('select');
+       }
+       else {
+           $(this).text('selected');
+       }
+    });
+
+    for(var i = 0; i < $('.plan').length; i++) {
+        planHeights.push($('.plan').eq(i).outerHeight());
+    }
+
+    console.log(planHeights);
+
+    $('.plan').css('height', Math.max.apply(null, planHeights));
+
+    $('.plan .select-plan').css({position: 'absolute', transform: 'translateX(-50%)'})
 });

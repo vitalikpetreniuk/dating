@@ -1,0 +1,137 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport',content='width=device-width, initial-scale=1.0')
+        title Memebership Page
+        link(rel="stylesheet", href="css/bootstrap.min.css")
+        link(rel="stylesheet", href="css/bootstrap-theme.min.css")
+        link(rel="stylesheet", href="css/jquery-ui.min.css")
+        link(rel="stylesheet", href="css/main.css")
+        link(rel="stylesheet", href="css/responsive.css")
+        script(src='js/jquery-3.2.1.min.js')
+        script(src='js/jquery-ui.min.js')
+        script(src='js/bootstrap.min.js')
+        script(src='js/main.js')
+    body
+        header.inner
+            .container
+                a(href="#",class='logo')
+                    img(src="img/inner-logo.png", alt="")
+                    .logo-text Created by women. For women. To have discreet affairs.
+                .nav-panel
+                    .dropdown
+                        button(data-toggle="dropdown").btn.btn-primary.dropdown-toggle#lang-menu #[img(src="img/lang-but.png", alt="")] #[span.caret]
+                        ul.dropdown-menu(role="menu" aria-labelledby="lang-menu")
+                            li(role="presentation")
+                                a(href="#") Example
+                            li(role="presentation")
+                                a(href="#") Long Example
+                            li(role="presentation")
+                                a(href="#") Very Long Example
+                    .dropdown.usa
+                        button(data-toggle="dropdown").btn.btn-primary.dropdown-toggle#lang-menu.btn-lg.usa-btn #[img(src="img/usa.png", alt="")] USA #[span.caret]
+                        ul.dropdown-menu(role="menu" aria-labelledby="lang-menu")
+                            li(role="presentation")
+                                a(href="#") Example
+                            li(role="presentation")
+                                a(href="#") Long Example
+                            li(role="presentation")
+                                a(href="#") Very Long Example
+                    br
+                    button.btn-lg.btn.btn-primary Login
+        .membership-block
+            .container
+                h1.page-main-title Full Membership
+                .step Step 1 - Choose a Membership Plan
+                .plans
+                    .row
+                        .col-md-4
+                            .plan
+                                .term 1 Month
+                                .price 48
+                                ul.features
+                                    li #[span Unlimited Messaging]
+                                    li #[span Appear at the TOP of #[br] search results]
+                                .btn.big-btn.select-plan.btn-lg Select
+                        .col-md-4
+                            .plan.most-popular.per-month
+                                .term 3 Month
+                                .price 33
+                                ul.features
+                                    li #[span Unlimited Messaging]
+                                    li #[span Appear at the TOP of #[br] search results]
+                                    li #[span 10 Virtual Gifts]
+                                    li #[span 5 Priority Messages]
+                                .btn.big-btn.select-plan.btn-lg Select
+                        .col-md-4
+                            .plan.per-month
+                                .term 6 Month
+                                .price 30
+                                ul.features
+                                    li #[span Unlimited Messaging]
+                                    li #[span Appear at the TOP of #[br] search results]
+                                    li #[span 20 Virtual Gifts]
+                                    li #[span 10 Priority Messages]
+                                .btn.big-btn.select-plan.btn-lg Select
+                .benefits
+                    .title Full Membership Benefits:
+                    .items
+                        .item
+                            .name Unlimited Messaging –
+                            .text Send and receive unlimited messages over our private and secure messaging platform for the duration of your membership.
+                        .item
+                            .name Top of search results –
+                            .text  Your profile will appear at the top (or near the top) of search results conducted by any women searching for male companionship in your area.
+                        .item
+                            .name Virtual Gifts –
+                            .text Want to distinguish yourself from other men? Send the object of your desire a Virtual Gift with personal message to really get her attention. Only available on 3 and 6 month packages.
+                        .item
+                            .name Priority Messages –
+                            .text Want to distinguish yourself from other men? Send the object of your desire a Virtual Gift with personal message to really get her attention. Only available on 3 and 6 month packages.
+                .step Step 2 - Choose a Payment Option
+                .step-desc *Eveeda will never appear on your credit card or bank statement #[br]*Anonymous billing name also changes frequently
+                .pay-items
+                    .pay-item
+                        .image
+                            img(src="img/pay-icon1.png", alt="")
+                        .name Credit Card
+                    .pay-item
+                        .image
+                            img(src="img/pay-icon2.png", alt="")
+                        .name Paypal
+                    .pay-item
+                        .image
+                            img(src="img/pay-icon3.png", alt="")
+                        .name Neteller
+                    .pay-item
+                        .image
+                            img(src="img/pay-icon4.png", alt="")
+                        .name Skrill
+                    .pay-item
+                        .image
+                            img(src="img/pay-icon5.png", alt="")
+                        .name Paysafecard
+                .after-text Payment Questions? Please #[a(href="#") Contact Us]
+        footer
+            .container
+                ul.bottom-menu
+                    li
+                        a(href="#") About Us
+                    li
+                        a(href="#") How It Works
+                    li
+                        a(href="#") FAQ
+                    li
+                        a(href="#") Contact Us
+                    li
+                        a(href="#") Affiliate
+                    li
+                        a(href="#") Press
+                    li
+                        a(href="#") Privacy Police
+                    li
+                        a(href="#") Terms &amp; Conditions
+                    li
+                        a(href="#") Sitemap
+                .copyright © 2017 Eveeda.com.  All rights reserved
