@@ -32,6 +32,6 @@ footer {
 	}
 }
 
-:not(.main-page) footer {
+:not(.main-page) > footer {
     margin-top: 45px;
 }

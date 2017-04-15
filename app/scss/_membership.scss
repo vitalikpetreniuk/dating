@@ -232,7 +232,7 @@
 
 
 @media (max-width: 991px) {
-	header .logo .logo-text {
+	header.inner .logo .logo-text {
 		font-size: 16px;
 	}
 
@@ -272,7 +272,7 @@
 }
 
 @media (max-width: 767px) {
-	header .logo {
+	header.inner .logo {
 		margin-bottom: 30px;
 	}
 
