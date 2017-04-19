@@ -100,54 +100,61 @@ html(lang='en')
         p.subtitle  Here is what we collectively came up with.
         h3.main-title Feeling Safe on Eveeda
         .item
-          .image
-            img(src='img/sm-icon1.png', alt='')
+          .image-wrapper
+            .image
+                img(src='img/sm-icon1.png', alt='')
           .text
             .title Security
             .text-block
               | Knowing that security was their #1 priority, we built Eveeda from the ground up using the most up to date security features and firewalls.
         .item
-          .image
-            img(src='img/sm-icon2.png', alt='')
+          .image-wrapper
+            .image
+                img(src='img/sm-icon2.png', alt='')
           .text
             .title Anonymous Profiles
             .text-block
               | Need to be discreet? You can select to have no photo, keep your photos in our private vault (where you decide who views them), or use our PhotoBlur feature to blur out your face.
         .item
-          .image
-            img(src='img/sm-icon3.png', alt='')
+          .image-wrapper
+            .image
+                img(src='img/sm-icon3.png', alt='')
           .text
             .title Complete Delete
             .text-block
               | Worried about leaving an online trace after you stop using Eveeda? Just click on Complete Delete and we&rsquo;ll delete your Eveeda profile plus any of your personal messages in other members&rsquo; inboxes - removing any record that you were ever on our site.
         .item
-          .image
-            img(src='img/sm-icon4.png', alt='')
+          .image-wrapper
+            .image
+                img(src='img/sm-icon4.png', alt='')
           .text
             .title Block Users
             .text-block
               | Pretty self-explanatory. Block other members from contacting you. Maybe we should call this feature &ldquo;Block Losers.&rdquo;
         .item
-          .image
-            img(src='img/sm-icon5.png', alt='')
+          .image-wrapper
+            .image
+                img(src='img/sm-icon5.png', alt='')
           .text
             .title Non-Social Network
             .text-block
               | Your Eveeda membership will not be linked to any of your other social networks. We even encourage you to create a new email address just for this account.
         .item
-          .image
-            img(src='img/sm-icon6.png', alt='')
+          .image-wrapper
+            .image
+                img(src='img/sm-icon6.png', alt='')
           .text
             .title Escape
             .text-block
               | Partner shows up while you&rsquo;re in the middle of a flirtatious message? Press the Escape button on your screen, and your browser will instantly switch to another website.
         .item
-          .image
-            img(src='img/sm-icon7.png', alt='')
-          .text
-            .title &ldquo;Married Only&rdquo; Club
-            .text-block
-              | The most discreet way to have an affair is be with someone who is in a similar situation as you. They have just as much reason to keep the affair a secret as you do. Eveeda is the only dating service out there where you can make it so only other married people can see your profile in search results.
+            .image-wrapper
+             .image
+                img(src='img/sm-icon7.png', alt='')
+            .text
+                .title &ldquo;Married Only&rdquo; Club
+                .text-block
+                  | The most discreet way to have an affair is be with someone who is in a similar situation as you. They have just as much reason to keep the affair a secret as you do. Eveeda is the only dating service out there where you can make it so only other married people can see your profile in search results.
     .fourth-block
       .container
         h3.main-title Having Success on Eveeda
@@ -155,6 +162,7 @@ html(lang='en')
           .image-block
             .image
               img(src='img/big-icon1.png', alt='')
+            .mobile-title 100% Free for Women
           .text
             .title 100% Free for Women
             .text-block
@@ -163,6 +171,7 @@ html(lang='en')
           .image-block
             .image
               img(src='img/big-icon2.png', alt='')
+            .mobile-title 1 to 1 Guarantee
           .text
             .title 1 to 1 Guarantee
             .text-block
@@ -173,6 +182,7 @@ html(lang='en')
           .image-block
             .image
               img(src='img/big-icon3.png', alt='')
+            .mobile-title &ldquo;Recommended&rdquo; Man
           .text
             .title &ldquo;Recommended&rdquo; Man
             .text-block
@@ -181,6 +191,7 @@ html(lang='en')
           .image-block
             .image
               img(src='img/big-icon4.png', alt='')
+            .mobile-title Hookup Near You
           .text
             .title Hookup Near You
             .text-block
@@ -189,6 +200,8 @@ html(lang='en')
           .image-block
             .image
               img(src='img/big-icon5.png', alt='')
+            .mobile-title
+                | Looking for a Sugar Daddy? Eveeda can help you too.
           .text
             .title
               | Looking for a Sugar Daddy?
@@ -200,7 +213,7 @@ html(lang='en')
               |  A discreet relationship with a mature, professional Eveeda man might be the answer for you.
     .fifth-block
       .container
-        .col-md-6
+        .col-xs-6
           .sign-up-block
             .text
               | Sign up to Eveeda for 
@@ -211,13 +224,32 @@ html(lang='en')
               |  lover today!
             |  
             a.big-btn(href='#').btn-lg.btn.btn-primary view your matches free
-        .col-md-6
+        .col-xs-6
           .phone-block
             .text *Not actual Eveeda members
             .image
               img(src='img/phone.png', alt='')
     footer
       .container
+        .nav-panel
+                .dropdown
+                    button(data-toggle="dropdown").btn.btn-primary.dropdown-toggle#lang-menu #[img(src="img/lang-but.png", alt="")] #[span.caret]
+                    ul.dropdown-menu(role="menu" aria-labelledby="lang-menu")
+                        li(role="presentation")
+                            a(href="#") Example
+                        li(role="presentation")
+                            a(href="#") Long Example
+                        li(role="presentation")
+                            a(href="#") Very Long Example
+                .dropdown.usa
+                    button(data-toggle="dropdown").btn.btn-primary.dropdown-toggle#lang-menu.btn-lg.usa-btn #[img(src="img/usa.png", alt="")] USA #[span.caret]
+                    ul.dropdown-menu(role="menu" aria-labelledby="lang-menu")
+                        li(role="presentation")
+                            a(href="#") Example
+                        li(role="presentation")
+                            a(href="#") Long Example
+                        li(role="presentation")
+                            a(href="#") Very Long Example
         ul.bottom-menu
           li
             a(href='#') About Us
@@ -238,3 +270,6 @@ html(lang='en')
           li
             a(href='#') Sitemap
         .copyright &copy; 2017 Eveeda.com. All rights reserved
+    .fixed-nav
+        a(href='#').btn-lg.btn.btn-primary view your matches free
+        button.btn-lg.btn.btn-primary Login

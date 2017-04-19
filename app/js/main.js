@@ -43,5 +43,15 @@ $(function(){
 
     $('.plan').css('height', Math.max.apply(null, planHeights));
 
-    $('.plan .select-plan').css({position: 'absolute', transform: 'translateX(-50%)'})
+    $('.plan .select-plan').css({position: 'absolute', transform: 'translateX(-50%)'});
+
 });
+
+// $(window).on('load resize', function(){
+// 	$('.main-page .second-block .item').each(function(){
+//   		var itemHeights = [];
+//   		itemHeights.push($(this).find('.image').outerHeight());
+//   		itemHeights.push($(this).find('.text').outerHeight());
+//   		$(this).find('.text,.image').css('height', Math.max.apply(null,itemHeights));
+//     });
+// });

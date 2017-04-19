@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 
 gulp.task('sass', function(){ // Создаем таск "sass"
     return gulp.src('app/scss/**/*.scss') // Берем источник
-        .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
+        .pipe(sass().on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
     	.pipe(browserSync.reload({stream: true})) 
 });
