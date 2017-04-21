@@ -1148,15 +1148,35 @@ footer .nav-panel {
   #loginModal .modal-body p a {
     color: #00ceea; }
 
-#createAcc .form-control {
+#createAcc .form-control, #createAccWithIcons .form-control {
   border-radius: 0; }
 
-#createAcc .form-inline {
+#createAcc .form-inline, #createAccWithIcons .form-inline {
   width: 100%;
-  margin: 0 -12px; }
-  #createAcc .form-inline .form-control {
-    width: calc(33.3% - 24px);
-    margin: 0 12px; }
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: stretch; }
+  #createAcc .form-inline .select-wrap, #createAccWithIcons .form-inline .select-wrap {
+    padding: 0 12px;
+    display: inline-flex;
+    -webkit-box-flex: 1;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    width: 20%;
+    /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1;
+    /* Safari 6.1+. iOS 7.1+, BB10 */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1; }
+    #createAcc .form-inline .select-wrap:first-child, #createAccWithIcons .form-inline .select-wrap:first-child {
+      padding-left: 0; }
+    #createAcc .form-inline .select-wrap:last-child, #createAccWithIcons .form-inline .select-wrap:last-child {
+      padding-right: 0; }
+  #createAcc .form-inline .form-control, #createAccWithIcons .form-inline .form-control {
+    width: 100%; }
 
 .checkbox-wrapper {
   text-align: center;
@@ -1296,6 +1316,9 @@ footer .nav-panel {
   position: absolute;
   right: 20px;
   top: 10px; }
+
+.form-control-feedback {
+  right: -30px; }
 
 *:focus {
   outline: 0 !important; }

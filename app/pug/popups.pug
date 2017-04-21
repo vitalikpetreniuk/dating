@@ -6,6 +6,7 @@ html
 		title Main Page
 		link(rel="stylesheet", href="css/bootstrap.min.css")
 		link(rel="stylesheet", href="css/bootstrap-theme.min.css")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
 		link(rel="stylesheet", href="css/jquery-ui.min.css")
 		link(rel="stylesheet", href="css/main.css")
 		link(rel="stylesheet", href="css/responsive.css")
@@ -21,6 +22,7 @@ html
 		button(class='btn btn-info btn-lg', data-toggle='modal',data-target='#loginModal') Login
 		button(class='btn btn-info btn-lg', data-toggle='modal',data-target='#rememberPsw') Forgot password
 		button(class='btn btn-info btn-lg', data-toggle='modal',data-target='#createAcc') Create
+		button(class='btn btn-info btn-lg', data-toggle='modal',data-target='#createAccWithIcons') Create(with icons)
 		button(class='btn btn-info btn-lg', data-toggle='modal',data-target='#upload') Upload
 		button(class='btn btn-info btn-lg', data-toggle='modal',data-target='#edit') Edit
 		div#loginModal.modal.fade
@@ -129,13 +131,116 @@ html
 							.form-group
 								label Date of Birth
 								.form-inline
-									select.form-control#day
-										option Day
-									select.form-control#month
-										option Month
-									select.form-control#year
-										option Year
+									.select-wrap
+										select.form-control#day
+											option Day
+									.select-wrap
+										select.form-control#month
+											option Month
+									.select-wrap
+										select.form-control#year
+											option Year
 
+							.checkbox-wrapper
+								input#accept(type='checkbox')
+								label(for="accept")
+								span I am at least 18 years of age and accept the #[a(href="#") Terms of Use] and #[a(href="#") Privacy Policy]
+							button(type='submit').btn.btn-info.btn-lg.btn-block view your matches free 
+		#createAccWithIcons.modal.fade
+			.modal-dialog
+				.modal-content
+					.modal-header
+						button(type='button',class='close',data-dismiss='modal') &times;
+						h4.modal-title Complete your FREE anonymous profile to see your search results 
+					.modal-body
+						form
+							.form-group
+								label(for='status') Relationship Status
+								select.form-control#status
+									option Married Woman Seeking Man
+									option Attached Woman Seeking Man
+									option Single Woman Seeking Man
+									option Woman Seeking Woman
+									option Married Man Seeking Woman
+									option Attached Man Seeking Woman
+							.form-group
+								label(for='searchOf') In Search Of
+								select.form-control#searchOf
+									option Married Woman Seeking Man
+									option Attached Woman Seeking Man
+									option Single Woman Seeking Man
+									option Woman Seeking Woman
+									option Married Man Seeking Woman
+									option Attached Man Seeking Woman
+							.form-group
+								label(for='location') Location
+								select.form-control#location
+									option Married Woman Seeking Man
+									option Attached Woman Seeking Man
+									option Single Woman Seeking Man
+									option Woman Seeking Woman
+									option Married Man Seeking Woman
+									option Attached Man Seeking Woman
+							.form-group
+								label(for='city') Relationship Status
+								select.form-control#city
+									option Married Woman Seeking Man
+									option Attached Woman Seeking Man
+									option Single Woman Seeking Man
+									option Woman Seeking Woman
+									option Married Man Seeking Woman
+									option Attached Man Seeking Woman
+							.form-group
+								label(for="createUsername") Create Username
+								input.form-control#createUsername
+							.form-group.has-warning
+								label(for="createPsw") Create Password
+								.col-xs-12
+									input.form-control#createPsw
+									span.glyphicon.glyphicon-exclamation-sign.form-control-feedback
+								.clearfix
+							.form-group.has-success
+								label(for="height") Your Height
+								.col-xs-12
+									input.form-control#height
+									span.glyphicon.glyphicon-ok.form-control-feedback
+								.clearfix
+							.form-group.has-success
+								label(for='bodyType') Your Body Type
+								.col-xs-12
+									select.form-control#bodyType
+										option Married Woman Seeking Man
+										option Attached Woman Seeking Man
+										option Single Woman Seeking Man
+										option Woman Seeking Woman
+										option Married Man Seeking Woman
+										option Attached Man Seeking Woman
+									span.glyphicon.glyphicon-ok.form-control-feedback
+								.clearfix
+							.form-group.has-warning
+								label(for='ethnicity') Your Ethnicity
+								.col-xs-12
+									select.form-control#bodyType
+										option Married Woman Seeking Man
+										option Attached Woman Seeking Man
+										option Single Woman Seeking Man
+										option Woman Seeking Woman
+										option Married Man Seeking Woman
+										option Attached Man Seeking Woman
+									span.glyphicon.glyphicon-exclamation-sign.form-control-feedback
+								.clearfix
+							.form-group
+								label Date of Birth
+								.form-inline
+									.select-wrap
+										select.form-control#day
+											option Day
+									.select-wrap
+										select.form-control#month
+											option Month
+									.select-wrap
+										select.form-control#year
+											option Year
 							.checkbox-wrapper
 								input#accept(type='checkbox')
 								label(for="accept")

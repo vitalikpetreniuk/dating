@@ -61,16 +61,36 @@
 	}
 }
 
-#createAcc {
+#createAcc, #createAccWithIcons {
 	.form-control {
 		border-radius: 0;
 	}
 	.form-inline {
 		width: 100%;
-		margin: 0 -12px;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		align-items: stretch;
+		.select-wrap {
+			padding: 0 12px;
+			display: inline-flex;
+			-webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+			  width: 20%;            /* For old syntax, otherwise collapses. */
+			  -webkit-flex: 1;       /* Safari 6.1+. iOS 7.1+, BB10 */
+			  -ms-flex: 1;           /* IE 10 */
+			  flex: 1; 
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+
 		.form-control {
-			width: calc(33.3% - 24px);
-			margin: 0 12px;
+			width: 100%;
 		}
 	}
 }
@@ -248,4 +268,8 @@
     position: absolute;
     right: 20px;
     top: 10px;
+}
+
+.form-control-feedback {
+	right: - 30px;
 }

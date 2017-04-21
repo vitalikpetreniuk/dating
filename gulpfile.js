@@ -13,7 +13,7 @@ gulp.task('sass', function(){ // Создаем таск "sass"
 
 gulp.task('pug', function() {
     return gulp.src('app/pug/**/*.pug')
-        .pipe(pug()) 
+        .pipe(pug({pretty: true})) 
         .pipe(gulp.dest('app')); // указываем gulp куда положить скомпилированные HTML файлы
 });
 
