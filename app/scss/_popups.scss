@@ -111,7 +111,7 @@
 	margin-top: 30px;
 }
 
-#accept {
+#accept, #accept2 {
 	display: none;
 	&+label {
 		background: url('../img/reg_checkbox.png');
@@ -235,7 +235,7 @@
 		}
 		button {
 			width: calc(50% - 20px);
-			margin: 0 20px;
+			margin: 0 18px;
 			background-color: transparent;
 			border-color: #ff6a6a;
 			color: #ff6a6a;
@@ -272,4 +272,8 @@
 
 .form-control-feedback {
 	right: - 30px;
+}
+
+.form-group {
+	margin-bottom: 0;
 }

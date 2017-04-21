@@ -1192,9 +1192,9 @@ footer .nav-panel {
     width: 230px;
     color: #626262; }
 
-#accept {
+#accept, #accept2 {
   display: none; }
-  #accept + label {
+  #accept + label, #accept2 + label {
     background: url("../img/reg_checkbox.png");
     width: 23px;
     height: 23px;
@@ -1203,9 +1203,9 @@ footer .nav-panel {
     margin-bottom: 0;
     margin-top: 3px;
     display: inline-block; }
-  #accept + label:hover {
+  #accept + label:hover, #accept2 + label:hover {
     cursor: pointer; }
-  #accept:checked + label {
+  #accept:checked + label, #accept2:checked + label {
     background-position: 0 0; }
 
 #upload .info {
@@ -1291,7 +1291,7 @@ footer .nav-panel {
     margin-bottom: 135px; }
   #edit .buttons button {
     width: calc(50% - 20px);
-    margin: 0 20px;
+    margin: 0 18px;
     background-color: transparent;
     border-color: #ff6a6a;
     color: #ff6a6a; }
@@ -1319,6 +1319,9 @@ footer .nav-panel {
 
 .form-control-feedback {
   right: -30px; }
+
+.form-group {
+  margin-bottom: 0; }
 
 *:focus {
   outline: 0 !important; }
