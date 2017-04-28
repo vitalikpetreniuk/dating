@@ -6,9 +6,25 @@
   #edit .buttons button {
     width: 100%;
     margin: 0;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  #upload .three-ways {
+    width: 50%; }
+  #upload .info .buttons {
+    width: calc(50% - 85px); } }
 
 @media (max-width: 600px) {
+  #upload .block-desc {
+    margin-right: 0; }
+  #upload .three-ways {
+    border: none;
+    padding-top: 0; }
+    #upload .three-ways .way .photos img {
+      height: auto; }
+  #upload .info .buttons {
+    margin-top: 30px;
+    transform: translateY(0); }
+  #edit .save-btn, #edit .done-btn {
+    width: 100%; }
   .modal-header {
     padding: 30px; }
   .modal-body {

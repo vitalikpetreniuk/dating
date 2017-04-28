@@ -1,5 +1,10 @@
 $(function(){
-	$('#blurSlider').slider();
+	$('#blurSlider').slider({
+		range: "min",
+		min: 1,
+		max: 100,
+	});
+	$('#blurSlider').slider('value',50);
 
 	$('#edit .buttons.top button').on('click', function(){
 		$('#edit .buttons.top button').removeClass('active');
@@ -11,6 +16,22 @@ $(function(){
 		}
 		else {
 			$('#blurSlider').hide();
+		}
+		$('#edit .save-btn').text('DONE');
+	});
+
+	$('#edit .save-btn').on('click',function(){
+
+		if($(this).text() == "DONE" && !$(this).hasClass('saved')) {
+			$(this).text('SAVE');
+			$('#blurSlider').hide();
+			$('#edit .buttons.top button').removeClass('active');
+		}
+		else {
+			$('.buttons.top,.done-btn').addClass('saved');
+			$(this).addClass('saved');
+			$(this).text('DONE');
+			$('#edit .info-message').text('Your photo successfully uploaded.');
 		}
 	});
 

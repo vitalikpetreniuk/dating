@@ -15,6 +15,17 @@
 			}
 		}
 	}
+
+	#upload {
+		.three-ways {
+			width: 50%;
+		}
+		.info {
+			.buttons {
+				width: calc(50% - 85px);
+			}
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -23,6 +34,33 @@
 }
 
 @media (max-width: 600px) {
+
+	#upload {
+		.block-desc {
+			margin-right: 0;
+
+		}
+		.three-ways {
+			border: none;
+			padding-top: 0;
+			.way .photos img {
+				height: auto;
+			}
+		}
+		.info {
+			.buttons {
+				margin-top: 30px;
+				transform: translateY(0);
+			}
+		}
+	}
+
+	#edit {
+		.save-btn, .done-btn {
+		width: 100%;
+	}
+	}
+
 	.modal-header {
 		padding: 30px;
 	}

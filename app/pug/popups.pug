@@ -254,6 +254,7 @@ html
 						h4.modal-title Would you like to upload a public or private Profile Picture?
 					.modal-body.red
 						.three-ways
+							.block-desc 3 ways to keep your profile anonymous
 							.way
 								.desc 
 									.text #[span.number 1.] Use our #[i Photoblur] feature to blur out your face.
@@ -273,27 +274,24 @@ html
 									img(src='img/body-face1.jpg')
 									img(src='img/body-face2.jpg')
 						.info
-							.desc 3 ways to keep your profile anonymous
 							.buttons
 								button.btn.btn-info.btn-lg.btn-block Add a photo
 								button.btn.btn-info.btn-lg.btn-block Don't add a photo
 		#edit.modal.fade
-					.modal-dialog.modal-lg
+					.modal-dialog.modal-md
 						.modal-content
 							.modal-header.red
 								button(type='button',class='close',data-dismiss='modal') &times;
 								h4.modal-title Edit Photo
 							.modal-body.red
+								.info-message Click on any of the buttons below to edit your photo. Once complete, click #[span.underline SAVE]
+								#blurSlider
 								.photo
 									img(src="img/edit_photo.jpg", alt="girl")
 								.buttons.top
 									button.btn.btn-info.btn-lg.blur Blur
 									button.btn.btn-info.btn-lg.crop Crop
-								#blurSlider
-								.buttons.bottom.on-active
-									button.btn.btn-info.btn-lg.cancel Cancel
-									button.btn.btn-info.btn-lg.done Done
-								.buttons.bottom
 									button.btn.btn-info.btn-lg Make Private
-									button.btn.btn-info.btn-lg Save
+								button.btn.btn-info.btn-lg.done-btn ADD MORE
+								button.btn.btn-info.btn-lg.save-btn Save
 

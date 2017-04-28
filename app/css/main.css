@@ -1101,6 +1101,9 @@ footer .nav-panel {
     font-size: 16px;
     line-height: 30px; } }
 
+.underline {
+  text-decoration: underline; }
+
 .btn {
   background: #00ceea;
   text-transform: uppercase; }
@@ -1124,7 +1127,7 @@ footer .nav-panel {
   padding: 0 50px;
   padding-bottom: 25px; }
   .modal-body.red {
-    padding: 55px 40px;
+    padding: 30px 40px;
     overflow: hidden;
     position: relative; }
 
@@ -1211,28 +1214,38 @@ footer .nav-panel {
 #upload .info {
   float: left;
   width: 35%; }
-  #upload .info .desc {
-    color: #ff6a6a;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 35px; }
   #upload .info .buttons {
     position: absolute;
-    width: 35%;
-    bottom: 55px;
+    width: 28%;
+    top: 50%;
+    transform: translateY(-50%);
     right: 40px; }
     #upload .info .buttons button {
       margin-top: 25px;
       background-color: transparent;
-      color: #00ceea; }
+      color: #00ceea;
+      padding: 15px 10px; }
       #upload .info .buttons button:hover {
         background-color: #00ceea;
         color: #fff; }
 
+#upload .block-desc {
+  color: #ff6a6a;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 35px;
+  line-height: 1;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: center;
+  margin-right: 45px; }
+
 #upload .three-ways {
   float: left;
-  width: 65%; }
+  width: 65%;
+  border-right: 5px solid #b2f0f9;
+  padding: 20px 0; }
   #upload .three-ways .way {
     margin-bottom: 35px;
     overflow: hidden;
@@ -1247,69 +1260,92 @@ footer .nav-panel {
       position: absolute;
       left: 0;
       top: 0;
-      width: 25%;
+      width: 50%;
       height: 100%; }
       #upload .three-ways .way .desc .text {
         position: absolute;
         width: 100%;
         left: 0;
         top: 50%;
-        transform: translateY(-50%); }
+        transform: translateY(-50%);
+        font-size: 16px; }
     #upload .three-ways .way .photos {
       float: left;
-      margin-left: calc(25% + 45px); }
+      margin-left: 50%; }
       #upload .three-ways .way .photos img {
-        margin-right: 40px; }
+        margin-right: 30px;
+        width: 100px;
+        height: 100px; }
 
-#edit .photo {
-  float: left;
-  width: 50%;
-  padding-right: 45px; }
-  #edit .photo img {
-    max-width: 100%; }
-
-#edit #blurSlider {
-  width: 50%;
-  float: left;
-  height: 2px;
-  border-color: #00ceea;
-  display: none; }
-  #edit #blurSlider .ui-slider-handle {
-    top: -0.25em;
-    width: .5em;
-    height: .5em;
-    background: #00ceea;
-    border-radius: 50%;
-    border-color: #00ceea; }
-
-#edit .buttons {
-  float: left;
-  width: 50%; }
-  #edit .buttons.on-active {
-    display: none; }
-  #edit .buttons.top {
-    margin-bottom: 135px; }
-  #edit .buttons button {
-    width: calc(50% - 20px);
-    margin: 0 18px;
-    background-color: transparent;
-    border-color: #ff6a6a;
-    color: #ff6a6a; }
-    #edit .buttons button:hover {
-      color: #00ceea;
+#edit {
+  text-align: center; }
+  #edit .info-message {
+    display: inline-block;
+    margin-bottom: 20px; }
+  #edit .photo {
+    float: left;
+    width: 65%;
+    overflow: hidden;
+    padding-right: 45px; }
+    #edit .photo img {
+      max-width: 100%;
+      min-height: 100%; }
+  #edit #blurSlider {
+    width: 100%;
+    float: left;
+    margin: 20px 0;
+    height: 3px;
+    border-color: #00ceea;
+    display: none;
+    border: 2px solid #dcdcdc; }
+    #edit #blurSlider .ui-slider-handle {
+      top: -0.35em;
+      width: 0.8em;
+      height: .8em;
+      background: #00ceea;
+      border-radius: 50%;
       border-color: #00ceea; }
-    #edit .buttons button:first-child {
-      margin-left: 0; }
-    #edit .buttons button:last-child {
-      margin-right: 0; }
-    #edit .buttons button.active {
-      color: #00ceea;
-      border-color: #00ceea; }
-  #edit .buttons.bottom {
-    position: absolute;
-    bottom: 55px;
-    right: 45px;
-    width: calc(50% - 45px); }
+    #edit #blurSlider .ui-slider-range-min {
+      background-color: #00ceea;
+      height: 4px;
+      top: -2px;
+      left: -2px; }
+  #edit .save-btn {
+    width: 35%;
+    float: left;
+    margin-top: 20px; }
+  #edit .done-btn {
+    margin-top: -20px;
+    width: 35%;
+    float: left;
+    opacity: 0; }
+    #edit .done-btn.saved {
+      opacity: 1; }
+  #edit .buttons {
+    float: left;
+    width: 35%; }
+    #edit .buttons.on-active {
+      display: none; }
+    #edit .buttons.saved {
+      opacity: 0; }
+    #edit .buttons button {
+      width: 100%;
+      margin-bottom: 20px;
+      background-color: transparent;
+      border-color: #ff6a6a;
+      color: #ff6a6a; }
+      #edit .buttons button:hover {
+        color: #00ceea;
+        border-color: #00ceea; }
+      #edit .buttons button:first-child {
+        margin-left: 0; }
+      #edit .buttons button:last-child {
+        margin-right: 0; }
+      #edit .buttons button.active {
+        color: #00ceea;
+        border-color: #00ceea; }
+    #edit .buttons.bottom {
+      width: 35px; }
 
 .modal-header .close {
   margin-top: -2px;
