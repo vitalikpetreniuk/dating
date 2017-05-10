@@ -1359,6 +1359,20 @@ footer .nav-panel {
 .form-group {
   margin-bottom: 0; }
 
+.has-success .form-message {
+  position: absolute;
+  display: inline-block;
+  bottom: calc(100% + 5px);
+  right: 0;
+  color: #3c763d; }
+
+.has-warning .form-message {
+  position: absolute;
+  display: inline-block;
+  bottom: calc(100% + 5px);
+  right: 0;
+  color: #8a6d3b; }
+
 *:focus {
   outline: 0 !important; }
 
